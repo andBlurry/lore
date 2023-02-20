@@ -58,7 +58,7 @@ $path_parts = preg_replace('/[0-9]+/', '', $path_parts);
 
 if($extension=='jpg' || $extension=='jpeg' || $extension =='png' || $extension == 'gif' || $extension == 'bmp'  ) 
 
-{ echo  '<div style="width: 50vw;"  class="align-img-caption gallery masonry-item" >';
+{ echo  '<div class="align-img-caption gallery masonry-item" >';
 
     echo '<a data-fancybox="gallery" href="'.$file_path.'" data-lightbox="mygallery" data-caption="'.$path_parts['filename'].'"><img src="'.$file_path.'"/>'.$path_parts['filename'].'</a>';
     echo '</div>';

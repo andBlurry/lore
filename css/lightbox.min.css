@@ -12,7 +12,7 @@ body.lb-disable-scrolling{
 	top:0;
 	left:0;
 	z-index:100001;
-	background-color:lightpink;
+	background-color:white;
 	filter:alpha(Opacity=80);
 	opacity:.8;display:none}
 
@@ -73,15 +73,15 @@ font-weight: 300;
 
 		.lb-dataContainer:after{content:"";display:table;clear:both}
 
-		.lb-data{padding:0 4px; color: navy;}
+		.lb-data{padding:0 4px; color: black;}
 
 		.lb-data .lb-details{width:85%;float:left;text-align:left;line-height:1.1em}
 
 		.lb-data .lb-caption{font-size:1.5rem;font-weight:700;line-height:1em}
 
-		.lb-data .lb-caption a{ color: navy;}
+		.lb-data .lb-caption a{ color: black;}
 
-		.lb-data .lb-number{display:hidden;clear:left;padding-bottom:1em;font-size:14px; color: navy;}
+		.lb-data .lb-number{display:hidden;clear:left;padding-bottom:1em;font-size:14px; color: black;}
 
 		.lb-data .lb-close{display:block;
 			float:right;
