@@ -1,0 +1,482 @@
+@font-face {
+    font-family: 'frat';
+    src: url('/fonts/frat/fraternity-regular-webfont.woff2') format('woff2'),
+         url('/fonts/frat/fraternity-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ body {
+  width: 100vw;
+  margin:0;
+}
+
+nav {
+ 
+  position: fixed;
+width:20vw !important;
+display: inline-block;
+  height: 100vh;
+z-index: 1000;
+}
+
+nav,  .menu-top{
+  background-color: white  ;}
+
+.item-a {
+  grid-column-start: 2;
+  grid-column-end: 5  ;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  z-index: 100000;
+
+}
+
+
+.item-b {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 10; 
+}
+
+.item-c {
+ grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background-color: inherit;
+  z-index: 10000;
+}
+
+
+.item-d {
+ grid-column-start: 2;
+  grid-column-end:6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: inherit;
+  min-height: 100vh;
+  z-index: 2000;
+  overflow-x: none;
+}
+
+
+
+
+
+
+
+
+.menu-side {
+  position: fixed;
+  
+  height: 100vh;
+  z-index: 100;
+}
+
+
+.sidebar {
+    display: flex;
+  flex-direction: column;
+ margin-left: 0.5vw;
+}
+
+.sidebar-item, h1, .one {
+  font-size: 5vw;
+  font-family: 'frat', sans-serif;
+
+}
+
+
+
+
+.sidebar-item {
+line-height: 0.9;
+margin-top:0;
+margin-bottom:0;
+/*text-transform: uppercase;
+*/
+  
+
+}
+
+.sidebar:hover > *:not(:hover) {
+ letter-spacing:0px;
+
+}
+
+.sidebar:hover {
+ letter-spacing:0.2vw;
+ text-align: justify;
+ white-space: nowrap;
+}
+
+
+
+
+.stretch_it{ white-space: nowrap; }
+.justify{ text-align:justify; }
+
+
+.one{
+
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0.9;
+  font-style: normal;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+
+
+
+
+.active {
+  letter-spacing:0.9vw;
+
+}
+
+
+.active:before {
+  content: "\00a0";
+}
+
+
+li:after {
+   content: "\00a0";
+}
+
+li:first-child .active:before {
+  content: none;
+}
+
+li:first-child .active:after {
+ content: "\00a0";
+}
+
+
+.menu-top {
+  position: fixed;
+ 
+  width:100%;
+  height: 5vh;
+  z-index: 10000;
+
+}
+
+
+
+h2 {
+  font-size: 2.5rem;
+  font-family: aktiv-grotesk-extended, sans-serif;
+font-style: normal;
+font-weight: 300;
+display: inline-block; 
+position: relative; 
+line-height: 0.9;
+margin-bottom:0;
+text-decoration: none;
+text-transform: uppercase;
+
+/*outline: solid 1px maroon; */
+}
+
+h3 {font-size: 4rem;
+    font-family: aktiv-grotesk-extended, sans-serif;
+font-style: normal;
+font-weight: 300;
+
+display: inline-block; 
+position: relative; 
+
+line-height: 0.9;
+
+margin-top:0;
+margin-bottom:0;
+text-decoration: none;
+
+}
+
+
+
+h1, h2, h3, a:link, a:visited, body, html {
+  color: navy;
+  text-decoration: none;
+}
+
+
+br {
+  margin:0;
+  padding:0;
+}
+
+h1 {
+font-weight: 400;
+font-style: normal;
+line-height: 0.9;
+margin-top:0;
+margin-bottom:0;
+}
+
+li{
+  font-size: 3vw;
+  font-family: 'frat', sans-serif;
+
+}
+
+li {
+  list-style-type:none;
+  font-family: 'frat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+/*  text-transform: uppercase;*/
+
+}
+
+
+
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus 
+{
+outline: none;
+}
+
+summary, video{
+  outline:none;
+}
+
+
+
+.section-1, .section-3, .section-4, .section-5  {
+   width:80vw;
+     padding-bottom: 10px;
+  height: auto;
+   top:0;
+   z-index: 1000;
+
+  
+  
+}
+
+
+
+
+.section-1 {
+   background-color: #a8a6cd;
+ }
+
+
+.section-3 {
+     background-color: #44eeb3; 
+}
+
+.section-4 {
+     background-color: paleturquoise; 
+      display: flex;
+  flex-wrap: wrap;
+  flex-direction: row ;
+  justify-content: flex-start;
+align-content:flex-start; 
+}
+
+
+/* iframes*/
+.section-2,.section-6 {
+   width:80vw;
+   height: inherit;
+
+   position: relative;
+
+   top:0;
+}
+
+.section-2 {
+ min-height:95vh;
+
+ }
+.section-6 {
+ min-height:100vh;
+ }
+
+.section-4 img, .section-5 img, .section-4 video, .section-5 video{
+
+margin-bottom:10px;
+align-self: center;
+
+}
+
+
+.section-5 {
+     background-color: white; 
+          display: flex;
+  flex-wrap: wrap;
+  flex-direction: row ;
+  justify-content: left;
+   height: inherit;
+}
+
+.gross {
+
+  font-family: aktiv-grotesk, sans-serif;
+
+font-weight: 900;
+
+font-style: normal;
+  font-size: 30rem;
+  line-height: 1;
+  line-break: auto;
+  position: absolute;
+  mix-blend-mode: exclusion;
+  z-index: 0;
+
+}
+
+
+
+.box {
+
+
+display:flex;
+          display: flex;
+  flex-wrap: wrap;
+  flex-direction: row ;
+  justify-content: left;
+   height: inherit;
+
+
+}
+
+
+.box-2 {
+
+  margin-left: 10px;
+margin-right: 10px;
+
+
+
+}
+
+.align-img-caption {
+  /*  margin-left: 10px;
+  margin-right: 10px;*/
+ 
+  position: relative;
+  display: flex;
+  flex-direction: column ;
+   max-width:400px;
+  justify-content: center;
+  align-content:stretch;+
+z-index: 1000;
+
+
+}
+
+.align-img-caption a{
+
+  display: flex;
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  line-break: auto;
+  flex-direction: column ;
+  
+  justify-content: center;
+  align-content:stretch;
+  z-index: 1000;
+
+
+}
+.align-img-caption a, .align-img-caption, .section-4 img, .section-5 img, .section-4 video, .section-5 video{
+max-width:25vw;
+}
+
+.section-4 video {
+max-width:50vw;
+}
+
+.video-icon::before {
+  content:"\25BA";
+  font-size: 2rem;
+  color: navy;
+padding-left: 1%;
+  padding-top: 1%;
+
+    position: absolute;
+
+    
+    height: 100px;
+ 
+    
+    z-index: 10000000;
+}
+iframe {
+  border:none;
+  position: absolute;
+bottom:0;
+  
+}
+
+
+.submenu-1 {
+  width:80vw;
+ 
+  position: sticky;
+ 
+  z-index: 1000;
+        display: flex;
+  flex-wrap: wrap;
+  flex-direction: row ;
+  height: 5vh;
+ 
+  align-content: stretch;
+
+
+}
+
+.text-1, .text-2, .text-3, .sound-1, .sound-2 {
+   flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1800px) {
+  .align-img-caption a, .align-img-caption, .section-4 img, .section-5 img, .section-4 video {
+max-width:25vw;
+}
+
+
+
+.align-img-caption a{
+  font-size: 1.2rem;
+  display: block;
+}
+
+.sidebar-item, h1, .one {
+  font-size: 6.5vw;
+
+}
+h3 {font-size: 2.4rem;}
+h2 {font-size: 1.8rem;}
+
+.section-4 video {
+width:vw;
+}
+
+}
+
+
+@media (max-width: 420px) {
